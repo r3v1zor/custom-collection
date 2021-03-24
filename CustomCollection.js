@@ -77,7 +77,7 @@ export class CustomCollection {
     generateUId() {
         while(true) {
             let id = this.uuidv4();
-            if (!this._map.get(id)) {
+            if (!this._map.has(id)) {
                 return id;
             }
         }
